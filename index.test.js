@@ -10,10 +10,8 @@ async function run(input, output, opts = {}) {
   equal(result.warnings().length, 0)
 }
 
-/* Write tests here
+/* Write tests here */
 
-test('does something', async () => {
-  await run('a{ }', 'a{ }', { })
-})
-
-*/
+test('replaces rems values with the --shad-rem unit calculation', async () => {
+  await run('a{ font-size: 1.25rem }', 'a{ font-size: calc(1.25 * var(--shadrem)) }', { })
+});

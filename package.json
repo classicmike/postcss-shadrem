@@ -1,13 +1,13 @@
 {
-  "name": "postcss-shadrem",
-  "version": "0.0.0",
-  "description": "PostCSS plugin to replace rems with a custom shadrem unit in order to provide Rems like support within ShadowDOM using the font size of the shadow root as the main root for Rems like measurement",
+  "name": "@classicmike/postcss-shadrem",
+  "version": "1.0.0",
+  "description": "This PostCSS plugin replaces standard rem units with a custom shadrem unit to enable REM-like support within Shadow DOM. It uses the font size of the shadow root as the base for shadrem measurements, ensuring consistent styling that adapts to the shadow DOM's context.",
   "keywords": ["postcss", "css", "postcss-plugin", "postcss-shadrem"],
   "scripts": {
-    "unit": "node --test index.test.js",
+    "unit": "node index.test.js",
     "test": "npm run unit && eslint ."
   },
-  "author": "Michael Tran <michael.tran@sandstone.com.au>",
+  "author": "Michael Tran <mike.the.frontend.developer@gmail.com>",
   "license": "MIT",
   "repository": "classicmike/postcss-shadrem",
   "engines": {
