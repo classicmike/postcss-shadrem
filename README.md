@@ -27,7 +27,7 @@ In web development, managing CSS units within shadow DOMs can be challenging. Tr
 To install Shad-REM, you need to have PostCSS and the PostCSS CLI set up in your project. Then, you can install Shad-REM via npm:
 
 ```bash
-npm install postcss-shad-rem --save-dev
+npm install @classicmike/postcss-shadrem --save-dev
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ Once installed, you need to configure PostCSS to use the Shad-REM plugin. Create
 // postcss.config.js
 module.exports = {
   plugins: [
-    require('postcss-shad-rem'),
+    require('@classicmike/postcss-shadrem'),
     // other plugins
   ]
 };
